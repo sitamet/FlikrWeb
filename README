@@ -1,0 +1,12 @@
+FlickrEeb is a web visor for you flickr photos sets
+
+Main features/goals:
+
+-. only one set of htmls
+-. mobile version: interface adapted by jquery mobile;
+-. web version: skip jquery mobile and play with responsive design
+-. full screen player: thanks to photoswipe
+-. seo url for your sets and photos: ex. /taking_care_of_a_young_reader-photo-6180546857
+-. accurate semantics
+-. detail photo page with detailed/controlled EXIF
+-. image size management: get image size according to user display and device

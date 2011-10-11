@@ -1,0 +1,164 @@
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 3.3.0
+build: 3167
+*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,/*em,strong,*/th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+
+body {
+    font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+}
+
+a {
+    -moz-transition-duration: 0.5s;
+    -moz-transition-property: color;
+    color: #222222;
+    text-decoration: none;
+}
+
+h1 {
+font-size: 16px;
+line-height: 38px;
+text-align: left;
+padding-left: 10px;
+}
+
+
+h2 {
+font-size: 14px;
+line-height: 20px;
+text-align: left;
+padding-left: 10px;
+}
+
+/* Note: Base design */
+
+.ps-sets, .ps-set {
+width: 960px;
+margin: 0 auto;
+padding: 0;
+}
+
+#Header {
+display: block;
+height: 40px;
+}
+
+.page-content {
+height: auto;
+display: block;
+clear: both;
+}
+
+#Footer {
+clear: both;
+padding: 20px 10px;
+}
+
+.page-content li {
+float: left;
+list-style: none;
+padding:  0;
+margin: 0;
+position: relative;
+overflow: hidden;
+height: 333px;
+width: 465px;
+padding: 10px 10px 0 10px;
+}
+
+.page-content li img {
+min-height: 333px;
+min-width: 465px;
+}
+
+.page-content li.first {
+  padding-left: 0;
+}
+
+.page-content li a {
+    text-decoration: none;
+}
+
+
+.page-content li h3 {
+    display: block;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    top:298px;
+    padding: 6px 20px 0 10px;
+    background: url("../img/photo_thumb_bg.png") repeat scroll 0 0 transparent;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.page-content li .ui-li-count {
+    position: absolute;
+    font-size: 11px;
+    font-weight: bold;
+    top:310px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    right: 18px;
+    color: #FFFFFF;
+}
+
+dl.info {
+margin: 0;
+padding: 10px;
+font-size: .75em;
+height: auto;
+}
+dl.info dt {
+font-weight: bold;
+float: left;
+display: block;
+width: 190px;
+text-align: right;
+}
+
+dl.info dd {
+float: left;
+display: block;
+margin: 0 0 3px 5px;
+width: 280px;
+}
+
+dl.info dt.first {
+    clear: both;
+}
+/* Note: Design for a width of 768px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .ps-sets, .ps-set { width: 768px; }
+    .page-content li {
+        width: 369px;
+    }
+    .page-content li img {
+        min-width: 369px;
+    }
+    dl.info dt {
+      color: #666;
+    }
+    dl.info dd {
+      color: #666;
+    }
+}
+
+
+/* Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+    .ps-sets, .ps-set { width: 465px; }
+    .page-content li {
+        width: 465px;
+        padding: 10px 0 0 0;
+    }
+    dl.info dt {
+      color: #999;
+    }
+    dl.info dd {
+      color: #999;
+    }
+}
+
